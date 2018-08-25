@@ -77,7 +77,7 @@ public class Point implements Comparable<Point> {
 			if(o1.slopeTo(point) > o2.slopeTo(point)){
 				return 1;
 			}
-			return 0;
+			return 0; 
 		}
 		
 	}
