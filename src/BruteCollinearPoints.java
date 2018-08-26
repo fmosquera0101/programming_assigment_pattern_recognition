@@ -12,6 +12,13 @@ public class BruteCollinearPoints {
 		}
 		int lengthPoints = points.length;
 		for (int i = 0; i < lengthPoints; i++) {
+			if(null == points[i]){
+				throw new IllegalArgumentException(); 
+			}
+			
+		}
+		
+		for (int i = 0; i < lengthPoints; i++) {
 			for (int j = i + 1; j < points.length; j++) {
 				if(points[j].compareTo(points[i]) == 0){
 					throw new IllegalArgumentException(); 
